@@ -39,7 +39,8 @@ DeviceFileEvents
 | order by Timestamp desc  
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/71402e84-8767-44f8-908c-1805be31122d">
+<img width="2004" height="1006" alt="1" src="https://github.com/user-attachments/assets/08095ec2-df61-45f5-a831-7491ecac29d2" />
+
 
 ---
 
@@ -56,7 +57,8 @@ DeviceProcessEvents
 | where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe"  
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b07ac4b4-9cb3-4834-8fac-9f5f29709d78">
+<img width="1982" height="774" alt="2" src="https://github.com/user-attachments/assets/2c634ef1-2aeb-4f1f-94ce-8f9a1e45c473" />
+
 
 ---
 
@@ -73,7 +75,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine  
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f">
+<img width="2064" height="994" alt="4" src="https://github.com/user-attachments/assets/22a234ad-f823-46e3-89dc-f5d8051c995d" />
+
 
 ---
 
@@ -92,7 +95,8 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFileName, InitiatingProcessFolderPath  
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/87a02b5b-7d12-4f53-9255-f5e750d0e3cb">
+<img width="2054" height="1020" alt="6" src="https://github.com/user-attachments/assets/cc6e829a-ac36-4698-b01a-007a31bb613c" />
+
 
 ---
 
